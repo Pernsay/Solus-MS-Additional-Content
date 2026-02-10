@@ -449,7 +449,7 @@
 <body>
 
     <div class="sidebar">
-        <h1>Solus MS</h1>
+        <h1>Additional Content</h1>
         <ul class="nav-list">
             <li class="nav-item"><a href="#" id="nav-library" class="active">Library</a></li>
             <li class="nav-item"><a href="#" id="nav-add-game">Add New Game</a></li>
@@ -908,7 +908,7 @@
         const favIconPng = document.getElementById('favicon-png');
         const favIconIco = document.getElementById('favicon-ico');
 
-        tabNameInput.oninput = (e) => { document.title = e.target.value.trim() || "Solus MS - Game Launcher"; };
+        tabNameInput.oninput = (e) => { document.title = e.target.value.trim() || "Solus MS - Additional Content"; };
         faviconUrlInput.oninput = (e) => {
             const url = e.target.value.trim() || "favicon.ico";
             favIconPng.href = favIconIco.href = url;
@@ -951,7 +951,7 @@
         };
         
         tabNameInput.addEventListener('input', () => {
-            originalTitle = tabNameInput.value.trim() || "Solus MS - Game Launcher";
+            originalTitle = tabNameInput.value.trim() || "Solus MS - Additional Content";
         });
         
         faviconUrlInput.addEventListener('input', () => {
